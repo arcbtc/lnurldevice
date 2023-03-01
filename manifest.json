@@ -2,8 +2,8 @@
   "repos": [
     {
       "id": "lnurldevice",
-      "organisation": "lnbits",
-      "repository": "lnurldevice"
+      "organisation": "arcbtc",
+      "repository": "nostrdevice"
     }
   ]
 }
