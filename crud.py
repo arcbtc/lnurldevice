@@ -25,6 +25,7 @@ async def create_lnurldevice(
             wallet,
             currency,
             device,
+            npub,
             profit,
             amount,
             pin,
@@ -41,7 +42,7 @@ async def create_lnurldevice(
             amount4,
             pin4
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             lnurldevice_id,
@@ -50,6 +51,7 @@ async def create_lnurldevice(
             data.wallet,
             data.currency,
             data.device,
+            data.npub,
             data.profit,
             data.amount,
             data.pin,

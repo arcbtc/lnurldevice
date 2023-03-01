@@ -137,3 +137,12 @@ async def m004_redux(db):
     await db.execute(
         "ALTER TABLE lnurldevice.lnurldevices ADD COLUMN pin4 INT DEFAULT 0"
     )
+
+
+async def m005_redux(db):
+    """
+    Add 'meta' for storing various metadata about the wallet
+    """
+    await db.execute(
+        "ALTER TABLE lnurldevice.lnurldevices ADD COLUMN npub TEXT;"
+    )

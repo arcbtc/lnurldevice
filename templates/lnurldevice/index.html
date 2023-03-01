@@ -242,6 +242,13 @@
           max="90"
           label="Profit margin (% added to invoices/deducted from faucets)"
         ></q-input>
+        <q-input
+          v-if="formDialoglnurldevice.data.device == 'atm'"
+          filled
+          dense
+          v-model.trim="formDialoglnurldevice.data.npub"
+          label="optional npub, if your atm is nostr powered"
+        ></q-input>
         <div v-else>
           <q-btn
             unelevated
@@ -607,6 +614,12 @@
               align: 'left',
               label: 'device',
               field: 'device'
+            },
+            {
+              name: 'npub',
+              align: 'left',
+              label: 'npub',
+              field: 'npub'
             },
             {
               name: 'currency',

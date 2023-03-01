@@ -13,6 +13,7 @@ class createLnurldevice(BaseModel):
     wallet: str
     currency: str
     device: str
+    npub: Optional[str] = ""
     profit: float = 0
     amount: Optional[int] = 0
     pin: int = 0
@@ -37,6 +38,7 @@ class lnurldevices(BaseModel):
     wallet: str
     currency: str
     device: str
+    npub: Optional[str]
     profit: float
     amount: int
     pin: int
